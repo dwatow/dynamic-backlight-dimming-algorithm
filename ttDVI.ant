@@ -1,0 +1,133 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2003 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : ISE
+//  /   /         Filename : ttDVI.ant
+// /___/   /\     Timestamp : Sun Jul 11 12:03:43 2010
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: ttDVI
+//Device: Xilinx
+//
+`timescale 1ps/1fs
+
+module ttDVI;
+    reg iODCK = 1'b0;
+    reg iDE = 1'b0;
+    reg iHSYNC = 1'b0;
+    reg iVSYNC = 1'b0;
+    reg [23:0] iQE = 24'b000000000000000000000000;
+    reg iSW0 = 1'b0;
+    reg [1:0] iSW1 = 2'b00;
+    reg [7:0] iSW2 = 8'b00000000;
+    wire VSYNC_GS;
+    wire oWEA;
+    wire [7:0] oData;
+    wire [8:0] oAddress;
+
+    parameter PERIOD = 13500;
+    parameter real DUTY_CYCLE = 0.6;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for iODCK
+    begin
+        #OFFSET;
+        forever
+        begin
+            iODCK = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) iODCK = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    assemble UUT (
+        .iODCK(iODCK),
+        .iDE(iDE),
+        .iHSYNC(iHSYNC),
+        .iVSYNC(iVSYNC),
+        .iQE(iQE),
+        .iSW0(iSW0),
+        .iSW1(iSW1),
+        .iSW2(iSW2),
+        .VSYNC_GS(VSYNC_GS),
+        .oWEA(oWEA),
+        .oData(oData),
+        .oAddress(oAddress));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process for clock iODCK
+        #0;
+        ANNOTATE_VSYNC_GS;
+        ANNOTATE_oWEA;
+        ANNOTATE_oData;
+        ANNOTATE_oAddress;
+        #OFFSET;
+        forever begin
+            #9450;
+            ANNOTATE_VSYNC_GS;
+            ANNOTATE_oWEA;
+            ANNOTATE_oData;
+            ANNOTATE_oAddress;
+            #4050;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("D:\\XC3S400AN\\final\\Sun07111128_all\\ttDVI.ano");
+        #1.0135e+006 // Final time:  1.0135e+006 ps
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+        // -------------  Current Time:  14950ps
+        #14950;
+        iSW1 = 2'b10;
+        // -------------------------------------
+    end
+
+    task ANNOTATE_VSYNC_GS;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,VSYNC_GS,%b]", $time, VSYNC_GS);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_oWEA;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,oWEA,%b]", $time, oWEA);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_oData;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,oData,%b]", $time, oData);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_oAddress;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,oAddress,%b]", $time, oAddress);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+

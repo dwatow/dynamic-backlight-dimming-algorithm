@@ -1,0 +1,39 @@
+Command line:
+   ./ttDVI_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  2566
+
+Sun Jul 11 12:04:30 2010
+
+WARNING:Simulator:694 - "D:/XC3S400AN/final/Sun07111128_all/EnhaMain.v" Line 48.
+    Module EnhaVarMaker does not have a `timescale directive but previous
+   modules do.
+Total Line Count : 3324
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 147.419 Meg
+
+ Total Signals          : 1697
+ Total Nets             : 3435
+ Total Signal Drivers   : 486
+ Total Blocks           : 192
+ Total Primitive Blocks : 159
+ Total Processes        : 683
+ Total Traceable Variables  : 544
+ Total Scalar Nets and Variables : 31627
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isimrun 1400 us 
+isimrun 3600 us 
+
+ Total Simulation Time: 27.5469 sec
+
+ Current Memory Usage: 156.922 Meg
+
+Sun Jul 11 13:02:52 2010
+

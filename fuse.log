@@ -1,0 +1,132 @@
+Determining compilation order of HDL files
+Analyzing Verilog file EnhaVarMaker.v
+Analyzing Verilog file EnhaSel.v
+Analyzing Verilog file Avg_to_Enha_Buff.v
+Analyzing Verilog file WhiteAndBlack.v
+Analyzing Verilog file max.v
+Analyzing Verilog file EnhaMain.v
+Analyzing Verilog file AverageEn.v
+Analyzing Verilog file WB24code.v
+Analyzing Verilog file V_Dutys2.v
+Analyzing Verilog file V_count.v
+Analyzing Verilog file V_address.v
+Analyzing Verilog file RGB_to_Y.v
+Analyzing Verilog file oPixelData2.v
+Analyzing Verilog file ModeSelect1.v
+Analyzing Verilog file max24code.v
+Analyzing Verilog file InOutBuff.v
+Analyzing Verilog file H_count.v
+Analyzing Verilog file GiveSingalok.v
+Analyzing Verilog file enOU_rstALG.v
+Analyzing Verilog file enha24code.v
+Analyzing Verilog file DE_hub.v
+Analyzing Verilog file BDSelect.v
+Analyzing Verilog file avg24code.v
+Analyzing Verilog file OutUnits2.v
+Analyzing Verilog file InUnit3code.v
+Analyzing Verilog file GSNan.v
+Analyzing Verilog file algo24code2.v
+Analyzing Verilog file TM.v
+Analyzing Verilog file ttDVI.tfw
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.EnhaVarMaker into
+d:/xc3s400an/final/sun07111128_all/isim/work/@enha@var@maker.sdb
+Saving Verilog parse-tree work.EnhaSel into
+d:/xc3s400an/final/sun07111128_all/isim/work/@enha@sel.sdb
+Saving Verilog parse-tree work.Avg_to_Enha_Buff into
+d:/xc3s400an/final/sun07111128_all/isim/work/@avg_to_@enha_@buff.sdb
+Saving Verilog parse-tree work.WhiteAndBlack into
+d:/xc3s400an/final/sun07111128_all/isim/work/@white@and@black.sdb
+Saving Verilog parse-tree work.max into
+d:/xc3s400an/final/sun07111128_all/isim/work/max.sdb
+Saving Verilog parse-tree work.EnhaMain into
+d:/xc3s400an/final/sun07111128_all/isim/work/@enha@main.sdb
+Saving Verilog parse-tree work.Average into
+d:/xc3s400an/final/sun07111128_all/isim/work/@average.sdb
+Saving Verilog parse-tree work.WhiteAndBlack24s into
+d:/xc3s400an/final/sun07111128_all/isim/work/@white@and@black24s.sdb
+Saving Verilog parse-tree work.V_Dutys into
+d:/xc3s400an/final/sun07111128_all/isim/work/@v_@dutys.sdb
+Saving Verilog parse-tree work.V_count into
+d:/xc3s400an/final/sun07111128_all/isim/work/@v_count.sdb
+Saving Verilog parse-tree work.V_address into
+d:/xc3s400an/final/sun07111128_all/isim/work/@v_address.sdb
+Saving Verilog parse-tree work.RGB_to_Y into
+d:/xc3s400an/final/sun07111128_all/isim/work/@r@g@b_to_@y.sdb
+Saving Verilog parse-tree work.PixelData into
+d:/xc3s400an/final/sun07111128_all/isim/work/@pixel@data.sdb
+Saving Verilog parse-tree work.ModeSelect into
+d:/xc3s400an/final/sun07111128_all/isim/work/@mode@select.sdb
+Saving Verilog parse-tree work.max24s into
+d:/xc3s400an/final/sun07111128_all/isim/work/max24s.sdb
+Saving Verilog parse-tree work.InUnitBuff into
+d:/xc3s400an/final/sun07111128_all/isim/work/@in@unit@buff.sdb
+Saving Verilog parse-tree work.H_Count into
+d:/xc3s400an/final/sun07111128_all/isim/work/@h_@count.sdb
+Saving Verilog parse-tree work.GiveSingalNan into
+d:/xc3s400an/final/sun07111128_all/isim/work/@give@singal@nan.sdb
+Saving Verilog parse-tree work.enOU_rstALG into
+d:/xc3s400an/final/sun07111128_all/isim/work/en@o@u_rst@a@l@g.sdb
+Saving Verilog parse-tree work.EnhaMain24s into
+d:/xc3s400an/final/sun07111128_all/isim/work/@enha@main24s.sdb
+Saving Verilog parse-tree work.DE_hub into
+d:/xc3s400an/final/sun07111128_all/isim/work/@d@e_hub.sdb
+Saving Verilog parse-tree work.BDSelect into
+d:/xc3s400an/final/sun07111128_all/isim/work/@b@d@select.sdb
+Saving Verilog parse-tree work.Average24s into
+d:/xc3s400an/final/sun07111128_all/isim/work/@average24s.sdb
+Saving Verilog parse-tree work.OutUnits into
+d:/xc3s400an/final/sun07111128_all/isim/work/@out@units.sdb
+Saving Verilog parse-tree work.InUnit3 into
+d:/xc3s400an/final/sun07111128_all/isim/work/@in@unit3.sdb
+Saving Verilog parse-tree work.GSNan into
+d:/xc3s400an/final/sun07111128_all/isim/work/@g@s@nan.sdb
+Saving Verilog parse-tree work.algorithm24s into
+d:/xc3s400an/final/sun07111128_all/isim/work/algorithm24s.sdb
+Saving Verilog parse-tree work.assemble into
+d:/xc3s400an/final/sun07111128_all/isim/work/assemble.sdb
+Saving Verilog parse-tree work.ttDVI into
+d:/xc3s400an/final/sun07111128_all/isim/work/tt@d@v@i.sdb
+Saving Verilog parse-tree work.glbl into
+d:/xc3s400an/final/sun07111128_all/isim/work/glbl.sdb
+Starting static elaboration
+Restoring Verilog parse-tree unisims_ver.GND from
+c:/xilinx/10.1/ise/verilog/hdp/nt/unisims_ver/unisims_ver.sdbl
+Completed static elaboration
+Fuse Memory Usage: 54772 Kb
+Fuse CPU Usage: 405 ms
+Compiling module glbl
+Compiling module GiveSingalNan
+Compiling module GND
+Compiling module GSNan
+Compiling module V_count
+Compiling module RGB_to_Y
+Compiling module H_Count
+Compiling module DE_hub
+Compiling module V_Dutys
+Compiling module V_address
+Compiling module PixelData
+Compiling module enOU_rstALG
+Compiling module InUnitBuff
+Compiling module InUnit3
+Compiling module ModeSelect
+Compiling module max
+Compiling module max24s
+Compiling module Average
+Compiling module Average24s
+Compiling module WhiteAndBlack
+Compiling module WhiteAndBlack24s
+Compiling module Avg_to_Enha_Buff
+Compiling module EnhaVarMaker
+Compiling module EnhaSel
+Compiling module EnhaMain
+Compiling module EnhaMain24s
+Compiling module BDSelect
+Compiling module algorithm24s
+Compiling module OutUnits
+Compiling module assemble
+Compiling module ttDVI
+Compiled 31 Verilog Units
+Built simulation executable ttDVI_isim_beh.exe
+Fuse Memory Usage: 57024 Kb
+Fuse CPU Usage: 639 ms

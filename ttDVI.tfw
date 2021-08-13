@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2003 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : ISE
+//  /   /         Filename : ttDVI.tfw
+// /___/   /\     Timestamp : Sun Jul 11 12:03:43 2010
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: ttDVI
+//Device: Xilinx
+//
+`timescale 1ps/1fs
+
+module ttDVI;
+    reg iODCK = 1'b0;
+    reg iDE = 1'b0;
+    reg iHSYNC = 1'b0;
+    reg iVSYNC = 1'b0;
+    reg [23:0] iQE = 24'b000000000000000000000000;
+    reg iSW0 = 1'b0;
+    reg [1:0] iSW1 = 2'b00;
+    reg [7:0] iSW2 = 8'b00000000;
+    wire VSYNC_GS;
+    wire oWEA;
+    wire [7:0] oData;
+    wire [8:0] oAddress;
+
+    parameter PERIOD = 13500;
+    parameter real DUTY_CYCLE = 0.6;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for iODCK
+    begin
+        #OFFSET;
+        forever
+        begin
+            iODCK = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) iODCK = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    assemble UUT (
+        .iODCK(iODCK),
+        .iDE(iDE),
+        .iHSYNC(iHSYNC),
+        .iVSYNC(iVSYNC),
+        .iQE(iQE),
+        .iSW0(iSW0),
+        .iSW1(iSW1),
+        .iSW2(iSW2),
+        .VSYNC_GS(VSYNC_GS),
+        .oWEA(oWEA),
+        .oData(oData),
+        .oAddress(oAddress));
+
+    initial begin
+        // -------------  Current Time:  14950ps
+        #14950;
+        iSW1 = 2'b10;
+        // -------------------------------------
+    end
+
+endmodule
+

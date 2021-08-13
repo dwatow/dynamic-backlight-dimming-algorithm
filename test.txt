@@ -1,0 +1,4 @@
+Device 0 options are:
+Row 0 => Verify	,TRUERow 1 ===== General CPLD And PROM Properties =====,
+Row 2 => Erase Before Programming	,TRUERow 18 ===== Spartan3AN Programming Properties =====,
+Row 19 => Data Protect	,FALSERow 20 => Data Lockdown	,FALSE

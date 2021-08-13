@@ -1,0 +1,211 @@
+NET	AS1_CS	LOC	=	 A2 	;
+NET	AS1_HSYNC	LOC	=	 C5 	;
+NET	AS1_SCAN1	LOC	=	 C4 	;
+NET	AS1_SCAN2	LOC	=	 A4 	;
+NET	AS1_SCAN3	LOC	=	 D6 	;
+NET	AS1_SCL	LOC	=	 F7 	;
+NET	AS1_SDA	LOC	=	 F6 	;
+#NET	AS1_VSYNC	LOC	=	 B2 	;
+NET	AS10_CS	LOC	=	 V15 	;
+NET	AS10_HSYNC	LOC	=	 U16 	;
+NET	AS10_SCAN1	LOC	=	 U17 	;
+NET	AS10_SCAN2	LOC	=	 Y18 	;
+NET	AS10_SCAN3	LOC	=	 V17 	;
+NET	AS10_SCL	LOC	=	 V16 	;
+NET	AS10_SDA	LOC	=	 Y15 	;
+#NET	AS10_VSYNC	LOC	=	 Y17 	;
+NET	AS2_CS	LOC	=	 A3 	;
+NET	AS2_HSYNC	LOC	=	 B8 	;
+NET	AS2_SCAN1	LOC	=	 E7 	;
+NET	AS2_SCAN2	LOC	=	 E6 	;
+NET	AS2_SCAN3	LOC	=	 C8 	;
+NET	AS2_SCL	LOC	=	 B5 	;
+NET	AS2_SDA	LOC	=	 F8 	;
+#NET	AS2_VSYNC	LOC	=	 B3 	;
+NET	AS3_CS	LOC	=	 A7 	;
+NET	AS3_HSYNC	LOC	=	 F9 	;
+NET	AS3_SCAN1	LOC	=	 A5 	;
+NET	AS3_SCAN2	LOC	=	 E8 	;
+NET	AS3_SCAN3	LOC	=	 C6 	;
+NET	AS3_SCL	LOC	=	 E9 	;
+NET	AS3_SDA	LOC	=	 B7 	;
+#NET	AS3_VSYNC	LOC	=	 A6 	;
+NET	AS4_CS	LOC	=	 Y19 	;
+NET	AS4_HSYNC	LOC	=	 W2 	;
+NET	AS4_SCAN1	LOC	=	 D8 	;
+NET	AS4_SCAN2	LOC	=	 F16 	;
+NET	AS4_SCAN3	LOC	=	 C7 	;
+NET	AS4_SCL	LOC	=	 W1 	;
+NET	AS4_SDA	LOC	=	 W18 	;
+#NET	AS4_VSYNC	LOC	=	 G16 	;
+NET	AS5_CS	LOC	=	 H18 	;
+NET	AS5_HSYNC	LOC	=	 H19 	;
+NET	AS5_SCAN1	LOC	=	 F2 	;
+NET	AS5_SCAN2	LOC	=	 R1 	;
+NET	AS5_SCAN3	LOC	=	 E3 	;
+NET	AS5_SCL	LOC	=	 H20 	;
+NET	AS5_SDA	LOC	=	 G20 	;
+#NET	AS5_VSYNC	LOC	=	 K16 	;
+NET	AS6_CS	LOC	=	 U6 	;
+NET	AS6_HSYNC	LOC	=	 W6 	;##no use
+NET	AS6_SCAN1	LOC	=	 W4 	;
+NET	AS6_SCAN2	LOC	=	 Y6 	;
+NET	AS6_SCAN3	LOC	=	 T8 	;
+NET	AS6_SCL	LOC	=	 Y3 	;##v6
+NET	AS6_SDA	LOC	=	 T7 	;
+#NET	AS6_VSYNC	LOC	=	 Y3 	;
+NET	AS7_CS	LOC	=	 T6 	;
+NET	AS7_HSYNC	LOC	=	 Y4 	;
+NET	AS7_SCAN1	LOC	=	 U9 	;
+NET	AS7_SCAN2	LOC	=	 Y5 	;
+NET	AS7_SCAN3	LOC	=	 R7 	;
+NET	AS7_SCL	LOC	=	 Y7 	;
+NET	AS7_SDA	LOC	=	 T9 	;##u7
+#NET	AS7_VSYNC	LOC	=	 T9 	;
+NET	AS8_CS	LOC	=	 T12 	;
+NET	AS8_HSYNC	LOC	=	 R12 	;
+NET	AS8_SCAN1	LOC	=	 W12 	;
+NET	AS8_SCAN2	LOC	=	 V2 	;
+NET	AS8_SCAN3	LOC	=	 Y12 	;
+NET	AS8_SCL	LOC	=	 U5 	;
+NET	AS8_SDA	LOC	=	 V5 	;
+#NET	AS8_VSYNC	LOC	=	 V1 	;
+NET	AS9_CS	LOC	=	 W14 	;
+NET	AS9_HSYNC	LOC	=	 T15 	;
+NET	AS9_SCAN1	LOC	=	 W16 	;
+NET	AS9_SCAN2	LOC	=	 T14 	;
+NET	AS9_SCAN3	LOC	=	 Y16 	;
+NET	AS9_SCL	LOC	=	 U15 	;
+NET	AS9_SDA	LOC	=	 Y14 	;
+#NET	AS9_VSYNC	LOC	=	 V14 	;
+NET	CLOCK	LOC	=	 Y11	;
+NET	RESET	LOC	=	 P8	;
+
+##----------------------------------------
+## DVI Board InPut
+##----------------------------------------
+NET	DVI_ODCK		LOC	=	 U11 	;
+NET	DVI_DE		LOC	=	 E1 	;
+NET	DVI_HSYNC	LOC	=	 D1 	;
+NET	DVI_VSYNC	LOC	=	 H6 	;
+#Blue
+NET	QE<0>		LOC	=	 N3 	;
+NET	QE<1>		LOC	=	 N2 	;
+NET	QE<2>		LOC	=	 R2 	;
+NET	QE<3>		LOC	=	 N1 	;
+NET	QE<4>		LOC	=	 P4 	;
+NET	QE<5>		LOC	=	 M5 	;
+NET	QE<6>		LOC	=	 P3 	;
+NET	QE<7>		LOC	=	 M4 	;
+#Green
+NET	QE<8>		LOC	=	 G3 	;
+NET	QE<9>		LOC	=	 M2 	;
+NET	QE<10>	LOC	=	 P1 	;
+NET	QE<11>	LOC	=	 R5 	;
+NET	QE<12>	LOC	=	 T4 	;
+NET	QE<13>	LOC	=	 U1 	;
+NET	QE<14>	LOC	=	 F1 	;
+NET	QE<15>	LOC	=	 C1 	;
+#Red
+NET	QE<16>	LOC	=	 C2 	;
+NET	QE<17>	LOC	=	 B1 	;
+NET	QE<18>	LOC	=	 D3 	;
+NET	QE<19>	LOC	=	 J7 	;
+NET	QE<20>	LOC	=	 D4 	;
+NET	QE<21>	LOC	=	 J6 	;
+NET	QE<22>	LOC	=	 F3 	;
+NET	QE<23>	LOC	=	 F4 	;
+
+##----------------------------------------
+## 8 Pin Seven Segment x4
+##----------------------------------------
+#sg1
+NET	SG1<0>	LOC	=	 M1 	;
+NET	SG1<1>	LOC	=	 K2 	;
+NET	SG1<2>	LOC	=	 L5 	;
+NET	SG1<3>	LOC	=	 L1 	;
+NET	SG1<4>	LOC	=	 K3 	;
+NET	SG1<5>	LOC	=	 R4 	;
+NET	SG1<6>	LOC	=	 J2 	;
+NET	SG1<7>	LOC	=	 L3 	;
+#sg2
+NET	SG2<0>	LOC	=	 V11 	;
+NET	SG2<1>	LOC	=	 W9 	;
+NET	SG2<2>	LOC	=	 W10 	;
+NET	SG2<3>	LOC	=	 Y9 	;
+NET	SG2<4>	LOC	=	 V12 	;
+NET	SG2<5>	LOC	=	 K4 	;
+NET	SG2<6>	LOC	=	 J1 	;
+NET	SG2<7>	LOC	=	 V10 	;
+#sg3
+NET	SG3<0>	LOC	=	 J4 	;
+NET	SG3<1>	LOC	=	 T1 	;
+NET	SG3<2>	LOC	=	 J3 	;
+NET	SG3<3>	LOC	=	 T2 	;
+NET	SG3<4>	LOC	=	 H3 	;
+NET	SG3<5>	LOC	=	 N4 	;
+NET	SG3<6>	LOC	=	 G1 	;
+NET	SG3<7>	LOC	=	 T3 	;
+NET	SG4<0>	LOC	=	 G4 	;
+#sg4
+NET	SG4<1>	LOC	=	 D2 	;
+NET	SG4<2>	LOC	=	 H2 	;
+NET	SG4<3>	LOC	=	 M3 	;
+NET	SG4<4>	LOC	=	 U3 	;
+NET	SG4<5>	LOC	=	 G5 	;
+NET	SG4<6>	LOC	=	 H4 	;
+NET	SG4<7>	LOC	=	 R3 	;
+##----------------------------------------
+## 8 Pin Switch x4
+##----------------------------------------
+#sw1
+#NET	SW	LOC	=	 C9 	;
+NET	SW1<0>	LOC	=	 C9 	;
+NET	SW1<1>	LOC	=	 F14 	;
+NET	SW1<2>	LOC	=	 G13 	;
+NET	SW1<3>	LOC	=	 E14 	;
+NET	SW1<4>	LOC	=	 G12 	;
+NET	SW1<5>	LOC	=	 C12 	;
+NET	SW1<6>	LOC	=	 H12 	;
+NET	SW1<7>	LOC	=	 H11 	;
+#sw2
+NET	SW2<0>	LOC	=	 L17 	;
+NET	SW2<1>	LOC	=	 K18 	;
+NET	SW2<2>	LOC	=	 K20 	;
+NET	SW2<3>	LOC	=	 M19 	;
+NET	SW2<4>	LOC	=	 J20 	;
+NET	SW2<5>	LOC	=	 M20 	;
+NET	SW2<6>	LOC	=	 L18 	;
+NET	SW2<7>	LOC	=	 L19 	;
+#sw3
+NET	SW3<0>	LOC	=	 V13 	;
+NET	SW3<1>	LOC	=	 U13 	;
+NET	SW3<2>	LOC	=	 W13 	;
+NET	SW3<3>	LOC	=	 Y13 	;
+NET	SW3<4>	LOC	=	 T18 	;
+NET	SW3<5>	LOC	=	 R18 	;
+NET	SW3<6>	LOC	=	 T20 	;
+NET	SW3<7>	LOC	=	 R17 	;
+#sw4
+NET	SW4<0>	LOC	=	 V7 	;
+NET	SW4<1>	LOC	=	 W8 	;
+NET	SW4<2>	LOC	=	 V8 	;
+NET	SW4<3>	LOC	=	 V9 	;
+NET	SW4<4>	LOC	=	 U10 	;
+NET	SW4<5>	LOC	=	 T10 	;
+NET	SW4<6>	LOC	=	 R13 	;
+NET	SW4<7>	LOC	=	 T13 	;
+
+NET	TP<7>	LOC	=	 U19 	;
+NET	TP<6>	LOC	=	 U20 	;
+NET	TP<5>	LOC	=	 P16 	;
+NET	TP<4>	LOC	=	 P17 	;#0
+NET	TP<3>	LOC	=	 L15 	;#1
+NET	TP<2>	LOC	=	 L16 	;#2
+NET	TP<1>	LOC	=	 V20 	;#3
+NET	TP<0>	LOC	=	 U18 	;#4
+
+NET "DVI_ODCK" TNM_NET = DVI_ODCK;
+TIMESPEC TS_DVI_ODCK = PERIOD "DVI_ODCK" 15ns HIGH 50%;
+#TIMEGRP "input_sys_clk" = PADS("inputs" "...");
+#TIMEGRP "input_sys_clk" OFFSET = IN 13 ns BEFORE "sys_clk" HIGH
